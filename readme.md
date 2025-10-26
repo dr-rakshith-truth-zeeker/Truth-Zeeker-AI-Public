@@ -143,3 +143,12 @@ Removed all raw captures from release branch
 Added sanitized samples and HF model integration
 
 Updated .gitignore to exclude raw data and models
+
+---
+
+📘 **Citation / Attribution**
+
+If you use Truth-Zeeker AI in research, training, or demos, please cite:
+
+> Rakshith J. (2025). *Truth-Zeeker AI v1.0: A Sanitized Zeek + ML Pipeline for Ethical Cybersecurity Research.*  
+> MIT License. https://github.com/dr-rakshith-truth-zeeker/Truth-Zeeker-AI-Public
