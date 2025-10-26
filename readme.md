@@ -1,3 +1,9 @@
+> **Public Release v1.0 — Sanitized Snapshot (October 2025)**
+> 
+> This repository contains a fully sanitized version of the Truth-Zeeker AI pipeline.
+> All IPs are mapped to documentation-reserved ranges (203.0.113.0/24).
+> Capture samples, logs, and model artifacts are pseudonymized for safe public reference.
+
 Truth-Zeeker AI v1.0
 
 Automated Zeek + ML Pipeline for Network Anomaly Detection
