@@ -1,0 +1,106 @@
+# Python envs, caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+.env
+*.env
+*.pyc
+.pytest_cache/
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Large / generated directories (ignore by default)
+zeek_pipeline_runs/
+out_ml_run_test/
+pcap_fixed_all/
+logs/
+backups/
+
+<<<<<<< HEAD
+# database or heavy artifacts
+*.sqlite
+*.csv.gz
+
+# PCAP files - ignore globally but allow samples/
+=======
+# Ignore raw outputs that used to be tracked
+outputs/out_ml_http/*.csv
+outputs/out_ml_vlan/*.csv
+
+# Ignore all pcap files globally EXCEPT inside samples/
+>>>>>>> 1a679740b638a01007350e1f27cd7be90d209080
+*.pcap
+*.pcapng
+!samples/
+!samples/*.pcap
+!samples/*.pcapng
+
+<<<<<<< HEAD
+# Plots & images - ignore images globally, allow our sanitized/demo images
+=======
+#explicitly ignore raw sample .cap files (Zeek test captures)
+samples/*.cap
+
+# Ignore all generated plots globally EXCEPT inside outputs/
+>>>>>>> 1a679740b638a01007350e1f27cd7be90d209080
+*.png
+!demo_images/
+!demo_images/*.png
+# if you want to allow only sanitized images, use:
+#!demo_images/*
+#!demo_images/*sanitized*.png
+
+# Outputs - ignore outputs by default
+outputs/
+# Allow sanitized outputs directory if you want to publish sanitized CSVs
+!sanitized_outputs/
+!sanitized_outputs/*.csv
+
+# Models - do not publish local model files
+*.joblib
+model_*.joblib
+# If you want to allow a specific model, whitelist it explicitly (not recommended)
+# !model.public.joblib
+
+# Credentials / secrets
+secrets.json
+credentials/
+<<<<<<< HEAD
+*.pem
+*.key
+
+# Misc
+*.log
+
+=======
+model.joblib
+demo_data/*output*.csv
+demo_data/*output*.png
+
+# Ignore original (non-pseudonymized) training CSV if it ever reappears
+demo_data/zeek_features_for_training.csv
+
+# Ignore backups and sanitized intermediate folders
+backups/
+sanitized_outputs/temp/
+samples_sanitized/temp/
+
+# Ensure all python dir caches are covered
+
+*.pyc
+__pycache__/
+>>>>>>> 1a679740b638a01007350e1f27cd7be90d209080
+
+# ignore old sanitized caps (10.x style)
+samples_sanitized/*_sanitized.cap
+
+# except keep docnet variants
+!samples_sanitized/*_sanitized_docnet.cap
+ip_files.txt
