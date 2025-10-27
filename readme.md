@@ -152,3 +152,13 @@ If you use Truth-Zeeker AI in research, training, or demos, please cite:
 
 > Rakshith J. (2025). *Truth-Zeeker AI v1.0: A Sanitized Zeek + ML Pipeline for Ethical Cybersecurity Research.*  
 > MIT License. https://github.com/dr-rakshith-truth-zeeker/Truth-Zeeker-AI-Public
+---
+
+**Verification Status — v1.0.1 (27 Oct 2025)**
+
+✔️ Verified public-safe build (v1.0.1).  
+All artifacts and IP addresses are pseudonymized using RFC 5737 documentation ranges (`203.0.113.0/24`).  
+Sanity checks validate no tracked capture files, model binaries, or secrets are present in the public branch.  
+For reproducible runs and verification scripts, see `scripts/sanity_check.sh`.
+
+---
