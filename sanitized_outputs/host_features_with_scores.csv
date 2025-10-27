@@ -1,0 +1,2 @@
+src_ip,conn_count,total_orig_bytes,total_resp_bytes,unique_dst_ports,avg_duration,total_orig_pkts,total_resp_pkts,anomaly_score
+203.0.113.21,3,1247,20100,2,10.738774333333332,20,23,-0.0
